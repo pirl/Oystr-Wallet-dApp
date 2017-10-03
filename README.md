@@ -1,2 +1,2 @@
-# Oystr-Wallet-dApp
-Pirl wallet dApp used in electron application.
+# Oystr Wallet
+Official Wallet dApp for Pirl.
