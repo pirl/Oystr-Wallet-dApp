@@ -46,6 +46,10 @@ Being a open source project built for and ran by the pirl community contribution
 to contribute simply make a pull request and assign it to one of the core team and it will be reviewed as soon as we have the bandwith to do so.
 
 
+## Reporting Issues
+
+When opening issues on GitHub please use the template located at `.github/ISSUE_TEMPLATE.md` this allows us to collect enough information to reproduce the issue and fix it in a timely manner.
+
 ## Gas usage statistics
 
 - Deploy original wallet: 1 230 162
