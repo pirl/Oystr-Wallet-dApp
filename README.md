@@ -2,6 +2,11 @@
 
 Official Wallet dApp for Pirl, Used within the electron wallet (Oystr)
 
+
+## Cloning Repository
+`git clone https://github.com/pirl/Oystr-Wallet-dApp/`
+
+
 ## Development
 
 Start a `pirl` node and the app using meteor and open http://localhost:3000 in your browser:
