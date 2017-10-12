@@ -52,7 +52,7 @@
                     <td>{{i18n "wallet.events.transactionHash"}}</td>
                     <td>
                         {{#if $eq ($.Session.get "network") "main"}} 
-                            <a href="http://etherscan.io/tx/{{transactionHash}}" target="_blank">{{transactionHash.substr 0 40}}...</a>
+                            <a href="http://explorer.pirl.io/#/tx/{{transactionHash}}" target="_blank">{{transactionHash.substr 0 40}}...</a>
                         {{else}}
                             {{#if $eq ($.Session.get "network") "test"}}
                                 <a href="http://ropsten.etherscan.io/tx/{{transactionHash}}" target="_blank">{{transactionHash.substr 0 40}}...</a>
@@ -66,7 +66,7 @@
                     <td>{{i18n "wallet.events.block"}}</td>
                     <td>
                        {{#if $eq ($.Session.get "network") "main"}} 
-                        <a href="http://etherscan.io/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
+                        <a href="http://explorer.pirl.io/#/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                             {{blockNumber}}
                             <br>
                             {{blockHash.substr 0 40}}...
