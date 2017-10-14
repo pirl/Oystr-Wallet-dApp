@@ -2,7 +2,7 @@
     <div class="dapp-container">
 
         <h1>{{{i18n "wallet.accounts.title"}}}</h1>
-
+        <div class="row">            
         {{#if pendingConfirmations}}
             <h2>{{i18n 'wallet.transactions.pendingConfirmations'}}</h2>
 
@@ -11,12 +11,11 @@
         {{/if}}
 
         {{#if hasAccounts}}
-        
+            <div class="col col-6">
             <h2>{{i18n "wallet.accounts.accountsTitle"}}</h2>
             <p>
                 {{i18n "wallet.accounts.accountsDescription"}}
             </p>
-            <div class="dapp-clear-fix"></div>
 
             <div class="wallet-box-list">
                 {{#each accounts}}
@@ -33,7 +32,8 @@
                 </button>
             {{/if}}
 
-
+            </div>
+            <div class="col col-6">                
             <h2>{{i18n "wallet.accounts.walletsTitle"}}</h2>
             
             {{#if hasMinimumBalance}}
@@ -62,9 +62,10 @@
                     <h3>{{i18n "wallet.app.buttons.addWallet"}}</h3>
                 </a>
             {{/if}}
-
+        </div>
         {{else}}
-            <div class="col col-5 mobile-full ">
+        <div class="col-6">
+            <div class="col col-6 mobile-full ">
                 <br>
                 {{#if isMist}}
                     <button class="wallet-box create account">
@@ -75,23 +76,24 @@
                     </button>
                 {{/if}}
             </div>
-            <div class="col col-5 mobile-full ">
+            <div class="col col-6 mobile-full ">
                 <h3>{{i18n "wallet.app.texts.noAccounts.title"}}</h3>
                 <p>{{i18n "wallet.app.texts.noAccounts.text"}}</p>
             </div>
+        </div>
         {{/if}}
+        </div>
 
-        <div class="dapp-clear-fix"></div>
-
-
+        <div class="row">
+            
         {{#if allTransactions}}
             <h2>{{i18n 'wallet.transactions.latest'}}</h2>
 
             {{> elements_transactions_table limit=5}}
 
         {{else}}
-
             <h2>{{i18n 'wallet.transactions.none'}}</h2>
         {{/if}}
+        </div>
     </div>
 </template>

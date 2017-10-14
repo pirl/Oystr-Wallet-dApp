@@ -3,13 +3,13 @@
         <h1>
             {{i18n "wallet.transactions.transactionInfoTitle"}}
             {{#if $eq ($.Session.get "network") "main"}} 
-                <a href="http://etherscan.io/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
+                <a href="http://explorer.pirl.io/#/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
             {{else}}
                 {{#if $eq ($.Session.get "network") "rinkeby"}}
-                    <a href="http://rinkeby.etherscan.io/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
+                    <a href="http://rinkeby.explorer.pirl.io/#/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
                 {{else}}
                     {{#if $eq ($.Session.get "network") "ropsten"}}
-                        <a href="http://ropsten.etherscan.io/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
+                        <a href="http://ropsten.explorer.pirl.io/#/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
                     {{else}}
                         <span style="font-size: 0.4em;">{{transactionHash}}</span>
                     {{/if}}
@@ -84,14 +84,14 @@
                         <td>{{i18n "wallet.transactions.block"}}</td>
                         <td>
                            {{#if $eq ($.Session.get "network") "main"}} 
-                            <a href="http://etherscan.io/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
+                            <a href="http://explorer.pirl.io/#/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                 {{blockNumber}}
                                 <br>
                                 {{blockHash.substr 0 40}}...
                             </a>
                             {{else}}
                                 {{#if $eq ($.Session.get "network") "test"}}
-                                <a href="http://ropsten.etherscan.io/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
+                                <a href="http://ropsten.explorer.pirl.io/#/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                     {{blockNumber}}
                                     <br>
                                     {{blockHash.substr 0 40}}...

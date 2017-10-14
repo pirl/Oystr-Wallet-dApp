@@ -37,7 +37,7 @@
                 }
             },
             "error": {
-                "wrongChain": "間違ったチェーン上にいます。Ethereum Wallet App を再起動して下さい。"
+                "wrongChain": "間違ったチェーン上にいます。Oystr Wallet App を再起動して下さい。"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "このスマート契約財布は、古いコードを持っており、フィッシング攻撃の対象となります。",
@@ -90,7 +90,7 @@
             "buttons": {
                 "deposit": "Etherをデポジット",
                 "depositBitcoin": "Bitcoinを使ってデポジット",
-                "viewOnExplorer": "View on Etherscan",
+                "viewOnExplorer": "View on PirlDiver",
                 "copyAddress": "アドレスをコピー",
                 "scanQRCode": "QRコードを表示",
                 "showInterface": "インターフェイスを表示"

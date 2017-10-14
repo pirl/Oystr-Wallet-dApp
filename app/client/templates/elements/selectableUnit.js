@@ -21,19 +21,19 @@ selectableUnits = [{
     value: 'ether'
 },
 {
-    text: 'FINNEY', //(µΞ)
+    text: 'PIRL', //(µΞ)
     value: 'finney'
 },
 {
-    text: 'BTC',
+    text: 'PIRL',
     value: 'btc'
 },
 {
-    text: 'USD',
+    text: 'PIRL',
     value: 'usd'
 },
 {
-    text: 'EUR',
+    text: 'PIRL',
     value: 'eur'
 },
 {
