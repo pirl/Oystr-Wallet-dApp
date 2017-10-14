@@ -33,17 +33,9 @@ contractVersions = [
 web3.eth.getBlock(0, function(e, res){
     if(!e){
         switch(res.hash) {
-            case '0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0':
+            case '0x29a742ba74d89fc24d2e48aeb1030fcb7276f4b2421488c05f2cc0f39aa1a273':
                 Session.set('network', 'main');
                 break;
-            case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
-                Session.set('network', 'rinkeby');
-                break;
-            case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
-                Session.set('network', 'ropsten');
-                break;
-            default:
-                Session.set('network', 'private');
         }
     }
 });

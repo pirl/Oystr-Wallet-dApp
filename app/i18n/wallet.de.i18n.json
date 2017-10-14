@@ -93,7 +93,7 @@
             "buttons": {
                 "deposit": "Pirl hinterlegen",
                 "depositBitcoin": "Pirl mit Bitcoin hinterlegen",
-                "viewOnExplorer": "View on Etherscan",
+                "viewOnExplorer": "View on PirlDiver",
                 "copyAddress": "Adresse kopieren",
                 "scanQRCode": "QR-Code anzeigen",
                 "showInterface": "Interface anzeigen"
